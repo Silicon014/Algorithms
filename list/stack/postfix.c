@@ -5,6 +5,14 @@
 
 int main(void)
 {
-	Stack s = NULL;
+	Stack s;
+	char c;
 
 	s = CreateStack(s);
+	while ((c = getchar()) != '\n')
+	{
+		s = Push(c, s);
+		selector(Top(s), s);
+	}
+	
+	

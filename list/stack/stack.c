@@ -11,7 +11,7 @@ Stack MakeEmpty(Stack s)
 	s->next = NULL;
 	return s;
 }
-Stack Push(char c, Stack s)
+Stack Push(Element c, Stack s)
 {
 	Stack i;
 
@@ -33,7 +33,7 @@ Stack Pop(Stack s)
 	free(s);
 	return i;
 }
-char Top(Stack s)
+Element Top(Stack s)
 {
 	return s->ch;
 }
