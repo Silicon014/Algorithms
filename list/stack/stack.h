@@ -1,10 +1,10 @@
-typedef char Element;
+#define TYPE int
+typedef TYPE Element;
 typedef struct node {
 	Element ch;
 	struct node * next;
 	} Node;
 typedef Node * Stack;
-typedef char Element;
 Stack CreateStack(void);	//创建一个栈
 Stack MakeEmpty(Stack);		//初始化栈为空栈
 Stack Push(Element, Stack);	//入栈
