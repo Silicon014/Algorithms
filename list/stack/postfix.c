@@ -13,7 +13,7 @@ int main(void)
 	Stack s;
 	Element c;
 
-	s = CreateStack(s);
+	s = CreateStack();
 	while ((c = (Element)getchar()) != (Element)'\n')
 	{
 		s = Push(c, s);
@@ -66,7 +66,7 @@ Stack put_together(Stack s)
 	
 	return s;
 }
-Stack Addition(s)
+Stack Addition(Stack s)
 {
 	Element x1, x2;
 
@@ -80,9 +80,9 @@ Stack Addition(s)
 	
 	return s;
 }
-Stack Subtraction(s)
+Stack Subtraction(Stack s)
 {
-	Elment x1, x2;
+	Element x1, x2;
 
 	s = Pop(s);
 	x1 = Top(s);
@@ -94,7 +94,7 @@ Stack Subtraction(s)
 
 	return s;
 }
-Stack Multiply(s)
+Stack Multiply(Stack s)
 {
 	Element x1, x2;
 
@@ -108,7 +108,7 @@ Stack Multiply(s)
 
 	return s;
 }
-Stack Division(s)
+Stack Division(Stack s)
 {
 	Element x1, x2;
 
@@ -127,4 +127,3 @@ Stack Division(s)
 
 	return s;
 }
-
