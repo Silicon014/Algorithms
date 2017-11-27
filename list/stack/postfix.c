@@ -34,6 +34,7 @@ Stack selector(Element i, Stack s)
 	if (isspace((char)i))
 	{
 		s = Pop(s);
+		s = Push(0, s);
 		return s;
 	}
 	if (isdigit((char)i))
@@ -66,7 +67,9 @@ Stack put_together(Stack s)
 	s = Pop(s);
 	if ((x2 = Top(s)) == 0)
 	{
-		s = Push(x1, s);
+		if (!IsEmpty(s))
+			s = Pop(s);
+		s = Push (x1, s);
 		return s;
 	}
 	s = Pop(s);
