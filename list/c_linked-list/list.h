@@ -3,7 +3,7 @@ struct item {
 	};
 /*item是一个结构。（*/
 typedef struct item Item;
-//重定义类型名struct item为Item
+//重命名类型名struct item为Item
 typedef struct node {
 	Item item;
 	struct node * next;
