@@ -1,5 +1,10 @@
 #include<stdio.h>
 #include<stdlib.h>
+typedef int Elem;
+typedef struct node {
+	Elem elem;
+	struct node * next;
+	} Node;
 #include"list.h"
 
 List CreateList(int i)

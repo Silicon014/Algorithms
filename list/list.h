@@ -1,8 +1,5 @@
 typedef int Elem;
-typedef struct node {
-	Elem element;
-	struct node * next;
-	} Node;
+typedef struct node Node;
 typedef Node * List;
 typedef Node * Position;
 
