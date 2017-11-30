@@ -10,8 +10,9 @@ static void PrintElem(Elem e)
 {
 	printf(PRINT, e);
 }
-Root Find(Tree t, Elem e)
+static Tree Find(Tree t, Elem e)
 {
+	
 Tree CreateTree(void)
 {
 	Tree t;
@@ -37,6 +38,7 @@ static void Print(Tree t, int depth)
 	for (int i = depth; i > 0; --i)
 		printf("\t");
 	PrintElem(t->elem);
+	putchar('\n');
 	if (t->next != NULL)
 		Print(t->next, depth);
 	if (t->child != NULL)
