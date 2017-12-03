@@ -12,4 +12,5 @@ void MakEmpty(Tree t)
 	}
 	return NULL;
 }
+void 
 
